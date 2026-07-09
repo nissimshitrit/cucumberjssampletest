@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "test:json": "cucumber-js --format json:cucumber-report.json",
+    "report:junit": "node ./temp/generate-junit-report.js cucumber-report.json cucumber-report.xml"
   },
   "keywords": [],
   "author": "",
